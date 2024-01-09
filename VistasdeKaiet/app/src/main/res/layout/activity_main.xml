@@ -45,6 +45,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="20dp"
+        android:layout_weight="0.5"
         android:gravity="center"
         android:text="Guardar automaticamente"
         android:textSize="9pt" />
@@ -52,7 +53,7 @@
     <SeekBar
         android:id="@+id/seekBar"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="410dp" />
 
     <RatingBar
         android:id="@+id/ratingBar"
