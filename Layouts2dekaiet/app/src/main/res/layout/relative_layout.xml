@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/activity_horizontal_margin"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/input_nombre"
+        android:layout_width="400dp"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:ems="10"
+        android:hint="Nombres"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/input_apellido"
+        android:layout_width="400dp"
+        android:layout_height="58dp"
+        android:layout_below="@id/input_nombre"
+        android:hint="Apellidos"
+        />
+
+    <TextView
+        android:id="@+id/texto_estado_civil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/input_apellido"
+        android:layout_alignParentLeft="true"
+        android:layout_marginRight="48dp"
+        android:paddingTop="16dp"
+        android:paddingBottom="8dp"
+        android:text="Estado civil"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <Spinner
+        android:id="@+id/spinner_estado_civil"
+        android:layout_width="133dp"
+        android:layout_height="66dp"
+        android:layout_below="@+id/texto_estado_civil"
+        android:layout_marginRight="7dp"
+        android:layout_toLeftOf="@+id/spinner_cargo"
+        android:entries="@array/lista_estado_civil" />
+
+
+    <TextView
+        android:id="@+id/texto_cargo"
+        android:layout_width="99dp"
+        android:layout_height="48dp"
+        android:layout_below="@+id/input_apellido"
+        android:layout_centerHorizontal="true"
+        android:layout_marginRight="48dp"
+        android:layout_toRightOf="@+id/texto_estado_civil"
+        android:paddingTop="16dip"
+        android:paddingBottom="8dip"
+        android:text="Cargo"
+        android:textSize="18sp" />
+
+
+    <Spinner
+        android:id="@+id/spinner_cargo"
+        android:layout_width="238dp"
+        android:layout_height="66dp"
+        android:layout_below="@+id/texto_cargo"
+        android:layout_alignStart="@+id/texto_cargo"
+        android:layout_alignLeft="@+id/texto_cargo"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="6dp"
+        android:entries="@array/lista_cargo" />
+
+</RelativeLayout>
