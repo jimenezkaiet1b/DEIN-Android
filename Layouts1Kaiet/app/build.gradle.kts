@@ -5,7 +5,7 @@ plugins {
 
 android {
     namespace = "com.example.layout1dekaiet"
-    compileSdk = 33
+    compileSdk = 34
 
     defaultConfig {
         applicationId = "com.example.layout1dekaiet"
