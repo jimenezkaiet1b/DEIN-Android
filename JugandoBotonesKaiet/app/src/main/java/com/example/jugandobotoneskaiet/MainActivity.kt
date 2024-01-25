@@ -6,6 +6,7 @@ import android.view.View
 import android.widget.Button
 import android.widget.LinearLayout
 import android.widget.Toast
+import kotlin.random.Random
 
 class MainActivity : AppCompatActivity() {
     private val numBotones = 10
@@ -22,25 +23,36 @@ class MainActivity : AppCompatActivity() {
             LinearLayout.LayoutParams.MATCH_PARENT,
             resources.getDimensionPixelSize(R.dimen.button_height)
         )
+        val iEncontrado = Random.nextInt(numBotones)
 
 
         for (i in 0 until numBotones) {
             val button = Button(this)
             button.layoutParams = lp
             button.text = "Botón " + String.format("%02d", i)
-            button.setOnClickListener(buttonClickListener(i))
+            if(i==iEncontrado){
+                button.setOnClickListener(encontrado())
+            }else{
+                button.setOnClickListener(sigueBuscando())
+            }
+
             llBotonera.addView(button)
 
         }
 
         resources.getDimensionPixelSize(R.dimen.button_height)
-
-
+        
     }
 
-    private fun buttonClickListener(i: Int): View.OnClickListener? {
+    private fun sigueBuscando(): View.OnClickListener? {
             return View.OnClickListener {
-                Toast.makeText(this@MainActivity, "Boton "+String.format("%02d", i)+ " pulsado.", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this@MainActivity, "Sigue buscando", Toast.LENGTH_SHORT).show()
             }
+    }
+
+    private fun encontrado(): View.OnClickListener? {
+        return View.OnClickListener {
+            Toast.makeText(this@MainActivity, "¡ME ENCONTRASTE!", Toast.LENGTH_SHORT).show()
+        }
     }
 }
