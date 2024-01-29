@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Ventanas de Kaiet</string>
+    <string name="modulo">DEIN</string>
+    <string name="nombre" >Kaiet Jimenez</string>>
+    <string name="aceptar">Boton aceptar</string>
+    <string name="alumno">App creado por Kaiet</string>
+</resources>
