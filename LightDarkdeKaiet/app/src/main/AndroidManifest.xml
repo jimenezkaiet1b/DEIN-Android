@@ -13,6 +13,9 @@
         android:theme="@style/Theme.LightDarkDeKaiet"
         tools:targetApi="31">
         <activity
+            android:name=".LightDarkApplication"
+            android:exported="false" />
+        <activity
             android:name=".settings.SettingFragment"
             android:exported="false" />
         <activity
