@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Menu2</string>
+    <string name="download">Descargar\n</string>
+    <string name="share">Compartir</string>
+    <string name="copy_description">Copiar descripcion</string>
+    <string name="descripcion_imagen">Logotipo avatar\n</string>
 </resources>
