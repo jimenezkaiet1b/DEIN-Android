@@ -5,6 +5,7 @@ import android.view.ContextMenu
 import android.view.Menu
 import android.view.View
 import android.widget.ImageView
+import android.widget.LinearLayout
 import android.widget.Toast
 
 
@@ -13,8 +14,8 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val image: ImageView = findViewById(R.id.image)
-        registerForContextMenu(image)
+        val linear: LinearLayout = findViewById(R.id.cuadrado)
+        registerForContextMenu(linear)
 
 
     }

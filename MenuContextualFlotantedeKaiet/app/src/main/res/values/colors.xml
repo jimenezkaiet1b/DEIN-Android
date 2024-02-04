@@ -1,5 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="black">#FF000000</color>
-    <color name="white">#FFFFFFFF</color>
+    <!-- Otros colores -->
+    <color name="colorPrimary">#000000</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#FCC434</color>
+    <color name="gray">#C1C1C5</color>
+    <color name="lightGray">#F2F2F2</color>
+
+    <!-- Resto de los colores -->
+    <color name="_bg__sign_in___sign_up_ek2_color">#000000</color>
+    <color name="level_3_color">#C1C1C5</color>
+    <color name="rectangle_1_color">#FFFFFF</color>
+    <color name="ellipse_1_color">#79797B</color>
+    <color name="english_color">#E6E6E6</color>
+    <color name="by_sign_in_or_sign_up__you_agree_to_our_terms_of_service_and_privacy_policy_color">#B3B3B3</color>
+    <color name="ellipse_19_color">#686868</color>
+    <color name="indicator_color">#FFFFFF</color>
 </resources>
