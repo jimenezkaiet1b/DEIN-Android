@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Menú Contextual Flotante de Kaiet</string>
+    <string name="download">Descargar</string>
+    <string name="share">Compartir</string>
+    <string name="copy_description">Añadir a listas</string>
+    <string name="descripcion_imagen">Descripcion imagen</string>
 </resources>
