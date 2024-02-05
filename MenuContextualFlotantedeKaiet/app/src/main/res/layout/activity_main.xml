@@ -8,7 +8,6 @@
     android:background="@color/colorPrimary">
 
 
-
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
@@ -36,7 +35,89 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-            <!-- solo la primera -> ire rellenando poliki poliki -->
+
+            <LinearLayout
+                android:id="@+id/cuadrado51"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="16dp"
+                android:background="@drawable/curvitas_esquinas"
+                android:orientation="horizontal"
+                android:padding="16dp">
+
+                <ImageView
+                    android:id="@+id/imageView101"
+                    android:layout_width="130dp"
+                    android:layout_height="197dp"
+                    android:scaleType="centerCrop"
+                    app:srcCompat="@drawable/pris" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/movieTitle101"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Las mejores Brr"
+                        android:textColor="@color/lightGray"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/imageView111"
+                            android:layout_width="15dp"
+                            android:layout_height="12dp"
+                            app:srcCompat="@android:drawable/ic_menu_recent_history" />
+
+                        <TextView
+                            android:id="@+id/movieTime131"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="8dp"
+                            android:text="14h 15' • 16"
+                            android:textColor="@color/lightGray"
+                            android:textSize="8sp" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/imageView512"
+                            android:layout_width="15dp"
+                            android:layout_height="12dp"
+                            android:src="@drawable/acc" />
+
+                        <TextView
+                            android:id="@+id/textView421"
+                            android:layout_width="180dp"
+                            android:layout_height="11dp"
+                            android:layout_weight="1"
+                            android:text="Pepe"
+                            android:textColor="@color/lightGray"
+                            android:textSize="10sp" />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
             <LinearLayout
                 android:id="@+id/cuadrado"
                 android:layout_width="match_parent"
@@ -120,10 +201,90 @@
 
 
             </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/cuadrado5"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="16dp"
+                android:background="@drawable/curvitas_esquinas"
+                android:orientation="horizontal"
+                android:padding="16dp">
+
+                <ImageView
+                    android:id="@+id/imageView10"
+                    android:layout_width="130dp"
+                    android:layout_height="197dp"
+                    android:scaleType="centerCrop"
+                    app:srcCompat="@drawable/pris" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/movieTitle10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Las mejores Brr"
+                        android:textColor="@color/lightGray"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/imageView11"
+                            android:layout_width="15dp"
+                            android:layout_height="12dp"
+                            app:srcCompat="@android:drawable/ic_menu_recent_history" />
+
+                        <TextView
+                            android:id="@+id/movieTime13"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="8dp"
+                            android:text="14h 15' • 16"
+                            android:textColor="@color/lightGray"
+                            android:textSize="8sp" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/imageView52"
+                            android:layout_width="15dp"
+                            android:layout_height="12dp"
+                            android:src="@drawable/acc" />
+
+                        <TextView
+                            android:id="@+id/textView42"
+                            android:layout_width="180dp"
+                            android:layout_height="11dp"
+                            android:layout_weight="1"
+                            android:text="Pepe"
+                            android:textColor="@color/lightGray"
+                            android:textSize="10sp" />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
         </LinearLayout>
     </ScrollView>
-
-
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

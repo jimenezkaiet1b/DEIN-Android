@@ -15,7 +15,11 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         val linear: LinearLayout = findViewById(R.id.cuadrado)
+        val linear2: LinearLayout = findViewById(R.id.cuadrado5)
+        val linear3: LinearLayout = findViewById(R.id.cuadrado51)
         registerForContextMenu(linear)
+        registerForContextMenu(linear2)
+        registerForContextMenu(linear3)
 
 
     }
