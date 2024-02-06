@@ -26,7 +26,6 @@ class MainActivity : AppCompatActivity() {
     private fun setupBottomMenu () {
         bottomNavigationView = findViewById(R.id. bottom_navigation)
         bottomNavigationView .setOnItemSelectedListener { item -> onItemSelectedListener(item) }
-        bottomNavigationView .setSelectedItemId(R.id. page_home)
 
         bottomNavigationView .menu.forEach { menuItem ->
             val badge = bottomNavigationView.getOrCreateBadge(menuItem.itemId)
@@ -46,7 +45,7 @@ class MainActivity : AppCompatActivity() {
         badgeCounts [itemId] = currentCount + 1
         val badge = bottomNavigationView .getOrCreateBadge(itemId)
         badge.number = badgeCounts [itemId] ?: 0
-        
+
         when (item.itemId) {
             R.id. page_home -> {
                 showPageFragment(R.drawable. ic_home, R.string.bottom_nav_home)
